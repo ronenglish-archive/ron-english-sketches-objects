@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -33,7 +33,66 @@
     @media (max-width:560px){ .wrap{ padding:22px 14px 50px; } .gallery-grid,.card-grid{ grid-template-columns:1fr; } .gallery-item img{ height:280px; } .card-grid .gallery-item img{ height:340px; } }
   </style>
   <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-</head>
+<style id="objects-original-multi-card-flex-v2">
+/* Flexible multi-image Original Drawing card: grow to fit every original without clipping. */
+.original-multi-card{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  gap:12px !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  overflow:visible !important;
+}
+.original-multi-card > a{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  flex:0 0 auto !important;
+}
+.original-multi-card > a > img{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+}
+</style><style id="objects-original-multi-card-flex-v3">
+/* Let a combined Original Drawing card take the full vertical space required by its contents. */
+.gallery-grid > .original-multi-card,
+[data-role="original"] .gallery-grid > .original-multi-card{
+  flex:0 0 auto !important;
+  flex-basis:auto !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  overflow:visible !important;
+  align-self:center !important;
+}
+.gallery-grid > .original-multi-card > a,
+[data-role="original"] .gallery-grid > .original-multi-card > a{
+  flex:0 0 auto !important;
+  flex-basis:auto !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+}
+.gallery-grid > .original-multi-card > a > img,
+[data-role="original"] .gallery-grid > .original-multi-card > a > img{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+}
+</style></head>
 <body>
   <main class="wrap">
 
@@ -50,8 +109,10 @@
     <section class="section-card" aria-labelledby="original-drawing">
       <h2 id="original-drawing">Original Drawings</h2>
       <div class="gallery-grid">
-        <a class="gallery-item" href="../../../../images/Sketches/Objects/furniture-fixtures-and-appliances/dudebox platform tv head.jpg"><img src="../../../../images/Sketches/Objects/furniture-fixtures-and-appliances/dudebox platform tv head.jpg" alt="TV original drawing by Ron English" loading="lazy" /></a>
-        <a class="gallery-item" href="../../../../images/Sketches/Objects/furniture-fixtures-and-appliances/tv.jpg"><img src="../../../../images/Sketches/Objects/furniture-fixtures-and-appliances/tv.jpg" alt="TV original drawing by Ron English" loading="lazy" /></a>
+                <div class="gallery-item original-multi-card">
+          <a href="../../../../images/Sketches/Objects/furniture-fixtures-and-appliances/dudebox platform tv head.jpg"><img src="../../../../images/Sketches/Objects/furniture-fixtures-and-appliances/dudebox platform tv head.jpg" alt="TV original drawing by Ron English" loading="lazy" /></a>
+          <a href="../../../../images/Sketches/Objects/furniture-fixtures-and-appliances/tv.jpg"><img src="../../../../images/Sketches/Objects/furniture-fixtures-and-appliances/tv.jpg" alt="TV original drawing by Ron English" loading="lazy" /></a>
+        </div>
       </div>
     </section>
     <div class="back-link">

@@ -147,7 +147,66 @@
     }
   </style>
   <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-</head>
+<style id="objects-original-multi-card-flex-v2">
+/* Flexible multi-image Original Drawing card: grow to fit every original without clipping. */
+.original-multi-card{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  gap:12px !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  overflow:visible !important;
+}
+.original-multi-card > a{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  flex:0 0 auto !important;
+}
+.original-multi-card > a > img{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+}
+</style><style id="objects-original-multi-card-flex-v3">
+/* Let a combined Original Drawing card take the full vertical space required by its contents. */
+.gallery-grid > .original-multi-card,
+[data-role="original"] .gallery-grid > .original-multi-card{
+  flex:0 0 auto !important;
+  flex-basis:auto !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  overflow:visible !important;
+  align-self:center !important;
+}
+.gallery-grid > .original-multi-card > a,
+[data-role="original"] .gallery-grid > .original-multi-card > a{
+  flex:0 0 auto !important;
+  flex-basis:auto !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+}
+.gallery-grid > .original-multi-card > a > img,
+[data-role="original"] .gallery-grid > .original-multi-card > a > img{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+}
+</style></head>
 <body>
   <main class="wrap page-narrow">
     <nav class="nav-pills" aria-label="Site navigation">
@@ -164,16 +223,14 @@
     <section class="section-card" aria-labelledby="original-drawing">
       <h2 id="original-drawing">Original Drawings</h2>
       <div class="originals-grid">
-        <figure class="gallery-item">
+                <div class="gallery-item original-multi-card">
           <a href="../../../../images/Sketches/Objects/amusement-rides-and-games/wolf%20carousel%20orig.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="../../../../images/Sketches/Objects/amusement-rides-and-games/wolf%20carousel%20orig.jpg" alt="W O L F C a R O U S E L original drawing by Ron English" loading="lazy" />
+          <img src="../../../../images/Sketches/Objects/amusement-rides-and-games/wolf%20carousel%20orig.jpg" alt="W O L F C a R O U S E L original drawing by Ron English" loading="lazy" />
           </a>
-        </figure>
-        <figure class="gallery-item">
           <a href="../../../../images/Sketches/Objects/amusement-rides-and-games/wolf%20carousel%20original.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="../../../../images/Sketches/Objects/amusement-rides-and-games/wolf%20carousel%20original.jpg" alt="W O L F C a R O U S E L original drawing by Ron English" loading="lazy" />
+          <img src="../../../../images/Sketches/Objects/amusement-rides-and-games/wolf%20carousel%20original.jpg" alt="W O L F C a R O U S E L original drawing by Ron English" loading="lazy" />
           </a>
-        </figure>
+        </div>
       </div>
     </section>
     <section class="section-card" aria-labelledby="digitized-versions">

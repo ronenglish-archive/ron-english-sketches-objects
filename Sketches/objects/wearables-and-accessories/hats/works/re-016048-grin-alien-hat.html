@@ -19,6 +19,7 @@ body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,Seg
 .gallery-item img{display:block;width:100%;height:310px;object-fit:contain;background:#f3f4f6;padding:6px}
 [data-role="original"] .gallery-item{flex:0 1 900px;max-width:900px}
 [data-role="original"] .gallery-item img{height:440px}
+[data-role="original"] .gallery-grid{flex-direction:column;align-items:center}
 .text-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}
 .text-block p{margin:.45rem 0}
 .index-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:18px}
@@ -31,4 +32,113 @@ footer a{color:inherit}
 .wrap{padding:22px 14px 48px}
 .gallery-item,.index-card{flex-basis:min(100%,320px);max-width:320px}
 [data-role="original"] .gallery-item img{height:320px}
-}</style></head><body><div class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../groups/brain-grin-alien-hat.html">← Return to Brain Grin Alien Hat</a></nav><header class="page-header"><h1 class="page-title">Grin Alien Hat</h1></header><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Grin Alien Hat</li><li><strong>Medium / dimensions:</strong> ink on paper size unknown</li><li><strong>Work ID:</strong> RE-016048</li></ul></div><section class="section-card" data-role="fused-info"><div class="text-block"><p><strong>Derived from a fused original drawing.</strong></p></div></section><section class="section-card" data-role="original"><h2>Original Drawing</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/wearables-and-accessories/hats/brain%20grin%20alien%20hat.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/wearables-and-accessories/hats/brain%20grin%20alien%20hat.jpg" alt="Grin Alien Hat" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/wearables-and-accessories/hats/brain%20grin%20alien%20hat%202.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/wearables-and-accessories/hats/brain%20grin%20alien%20hat%202.jpg" alt="Grin Alien Hat" loading="lazy"></a></div></section><footer>Published via GitHub Pages<br>for long-term public access.</footer></div></body></html>
+}</style><style id="fused-detail-compact-artwork-cards">
+/* Compact fused-detail artwork cards: preserve full images without oversized empty panels. */
+.gallery-grid{
+  align-items:flex-start !important;
+}
+.gallery-item{
+  flex:0 1 420px !important;
+  max-width:420px !important;
+  width:min(100%,420px) !important;
+}
+.gallery-item img{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  max-height:460px !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  background:#f3f4f6 !important;
+  padding:6px !important;
+}
+[data-role="original"] .gallery-item{
+  flex:0 1 560px !important;
+  max-width:560px !important;
+  width:min(100%,560px) !important;
+}
+[data-role="original"] .gallery-item img{
+  height:auto !important;
+  max-height:520px !important;
+}
+[data-role="original"] .gallery-grid{
+  flex-direction:column !important;
+  align-items:center !important;
+  gap:18px !important;
+}
+@media(max-width:700px){
+  .gallery-item,
+  [data-role="original"] .gallery-item{
+    flex-basis:100% !important;
+    max-width:100% !important;
+    width:100% !important;
+  }
+  .gallery-item img,
+  [data-role="original"] .gallery-item img{
+    height:auto !important;
+    max-height:460px !important;
+  }
+}
+</style><style id="objects-original-multi-card-flex-v2">
+/* Flexible multi-image Original Drawing card: grow to fit every original without clipping. */
+.original-multi-card{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  gap:12px !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  overflow:visible !important;
+}
+.original-multi-card > a{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  flex:0 0 auto !important;
+}
+.original-multi-card > a > img{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+}
+</style><style id="objects-original-multi-card-flex-v3">
+/* Let a combined Original Drawing card take the full vertical space required by its contents. */
+.gallery-grid > .original-multi-card,
+[data-role="original"] .gallery-grid > .original-multi-card{
+  flex:0 0 auto !important;
+  flex-basis:auto !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  overflow:visible !important;
+  align-self:center !important;
+}
+.gallery-grid > .original-multi-card > a,
+[data-role="original"] .gallery-grid > .original-multi-card > a{
+  flex:0 0 auto !important;
+  flex-basis:auto !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+}
+.gallery-grid > .original-multi-card > a > img,
+[data-role="original"] .gallery-grid > .original-multi-card > a > img{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+}
+</style></head><body><div class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../groups/brain-grin-alien-hat.html">← Return to Brain Grin Alien Hat</a></nav><header class="page-header"><h1 class="page-title">Grin Alien Hat</h1></header><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Grin Alien Hat</li><li><strong>Medium / dimensions:</strong> ink on paper size unknown</li><li><strong>Work ID:</strong> RE-016048</li></ul></div><div class="relationship-note"><strong>Derived from a fused original drawing.</strong></div><section class="section-card" data-role="original"><h2>Original Drawing</h2><div class="gallery-grid">        <div class="gallery-item original-multi-card">
+          <a href="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/wearables-and-accessories/hats/brain%20grin%20alien%20hat.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/wearables-and-accessories/hats/brain%20grin%20alien%20hat.jpg" alt="Grin Alien Hat" loading="lazy"></a>
+          <a href="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/wearables-and-accessories/hats/brain%20grin%20alien%20hat%202.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/wearables-and-accessories/hats/brain%20grin%20alien%20hat%202.jpg" alt="Grin Alien Hat" loading="lazy"></a>
+        </div></div></section><footer>Published via GitHub Pages<br>for long-term public access.</footer></div></body></html>
