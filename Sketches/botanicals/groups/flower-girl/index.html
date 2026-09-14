@@ -18,7 +18,15 @@ body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,Seg
 .work-title{margin:0;font-weight:700;font-size:1.05rem;line-height:1.3;text-align:center}
 footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}
 @media(max-width:700px){.wrap{padding:22px 14px 48px}.index-grid{grid-template-columns:1fr}}
-</style></head><body><main class="wrap">
+</style><style id="sketches-index-grid-last-row-centering-v1">
+  .index-grid{display:flex !important;flex-wrap:wrap !important;justify-content:center !important;align-items:stretch !important;}
+  .index-grid > *{flex:0 1 calc((100% - 54px) / 4) !important;max-width:calc((100% - 54px) / 4) !important;}
+  @media(max-width:732px){.index-grid > *{flex-basis:calc((100% - 36px) / 3) !important;max-width:calc((100% - 36px) / 3) !important;}}
+  @media(max-width:494px){.index-grid > *{flex-basis:calc((100% - 18px) / 2) !important;max-width:calc((100% - 18px) / 2) !important;}}
+  @media(max-width:256px){.index-grid > *{flex-basis:100% !important;max-width:100% !important;}}
+</style>
+
+</head><body><main class="wrap">
 <nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../../index.html">&larr; Return to Plants &amp; Botanicals</a></nav>
 <header class="page-header"><h1 class="page-title">Flower Girl</h1></header>
 <section class="index-grid"><a class="gallery-item" data-title="Flower Girl 1" href="../../flower-girl/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers/Flower%20Girl%20ORIGINAL.jpg" alt="" loading="lazy"><div class="entry-body"><p class="work-title">Flower Girl 1</p></div></a>
