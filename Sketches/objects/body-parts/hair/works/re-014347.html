@@ -56,6 +56,40 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid v
 .catalogue-meta-block .work-meta strong{
   font-weight:700 !important;
 }
+
+/* RON CARD SIZING NORMALIZATION START */
+.gallery-grid .gallery-item{
+  display:block !important;
+  flex:0 1 900px !important;
+  max-width:900px !important;
+  width:100% !important;
+}
+
+.gallery-grid .gallery-item img{
+  display:block !important;
+  width:100% !important;
+  height:460px !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  background:#f3f4f6;
+  padding:6px;
+}
+
+@media(max-width:620px){
+  .wrap{
+    padding:22px 14px 48px;
+  }
+
+  .gallery-grid .gallery-item{
+    flex-basis:min(100%,900px) !important;
+    max-width:900px !important;
+  }
+
+  .gallery-grid .gallery-item img{
+    height:340px !important;
+  }
+}
+/* RON CARD SIZING NORMALIZATION END */
 </style></head>
 <body><!-- OBJECTS-DETAIL-NAV-V7 -->
 <main class="wrap">

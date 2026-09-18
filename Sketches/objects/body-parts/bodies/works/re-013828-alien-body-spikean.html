@@ -166,6 +166,62 @@ footer a{color:inherit}
 .relationship-note a{
   color:inherit !important;
 }
+
+/* RON CARD SIZING NORMALIZATION START */
+.gallery-grid .gallery-item{
+  display:block !important;
+  flex:0 1 290px !important;
+  max-width:300px !important;
+  width:100% !important;
+}
+
+.gallery-grid .gallery-item img{
+  display:block !important;
+  width:100% !important;
+  height:310px !important;
+  object-fit:contain !important;
+  background:#f3f4f6;
+  padding:6px;
+}
+
+.original-grid .gallery-item,
+.originals-grid .gallery-item,
+[data-role="original"] .gallery-item{
+  flex:0 1 900px !important;
+  max-width:900px !important;
+}
+
+.original-grid .gallery-item img,
+.originals-grid .gallery-item img,
+[data-role="original"] .gallery-item img{
+  height:460px !important;
+  max-height:none !important;
+}
+
+@media(max-width:620px){
+  .wrap{
+    padding:22px 14px 48px;
+  }
+
+  .gallery-grid .gallery-item{
+    flex-basis:min(100%,330px) !important;
+    max-width:330px !important;
+  }
+
+  .original-grid .gallery-item,
+  .originals-grid .gallery-item,
+  [data-role="original"] .gallery-item{
+    flex-basis:min(100%,900px) !important;
+    max-width:900px !important;
+  }
+
+  .original-grid .gallery-item img,
+  .originals-grid .gallery-item img,
+  [data-role="original"] .gallery-item img{
+    height:340px !important;
+  }
+}
+/* RON CARD SIZING NORMALIZATION END */
 </style></head><body><div class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../groups/alien-body-heelsian.html">← Return to Alien Body - Heelsian</a></nav><header class="page-header"><h1 class="page-title">Alien Body - Spikean</h1></header>
 <section class="section-card" data-role="original" aria-labelledby="original-drawing">
   <h2 id="original-drawing">Original Drawing</h2>

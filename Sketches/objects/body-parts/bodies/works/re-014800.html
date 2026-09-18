@@ -29,7 +29,63 @@ body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Se
 .gateway-card{display:flex;align-items:center;justify-content:center;flex:0 1 300px;min-height:125px;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);text-decoration:none;color:#111;background:#fff;padding:24px;text-align:center;font-size:22px;font-weight:700}
 footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
 @media(max-width:700px){.wrap{padding:22px 14px 48px}.image-grid a{flex-basis:min(100%,320px)}.original-grid img{height:330px}.catalog-card{flex-basis:min(100%,280px)}}
-.catalogue-meta-block{max-width:900px;margin:0 auto 24px;text-align:center}.work-meta{list-style:none;padding:0;margin:0;text-align:center}.work-meta li{margin:.25rem 0}.relationship-note{max-width:900px;margin:0 auto 24px;padding:12px 16px;border:1px solid var(--border);border-radius:14px;background:#f9fafb;text-align:center;line-height:1.6}</style>
+.catalogue-meta-block{max-width:900px;margin:0 auto 24px;text-align:center}.work-meta{list-style:none;padding:0;margin:0;text-align:center}.work-meta li{margin:.25rem 0}.relationship-note{max-width:900px;margin:0 auto 24px;padding:12px 16px;border:1px solid var(--border);border-radius:14px;background:#f9fafb;text-align:center;line-height:1.6}
+/* RON CARD SIZING NORMALIZATION START */
+.gallery-grid .gallery-item{
+  display:block !important;
+  flex:0 1 290px !important;
+  max-width:300px !important;
+  width:100% !important;
+}
+
+.gallery-grid .gallery-item img{
+  display:block !important;
+  width:100% !important;
+  height:310px !important;
+  object-fit:contain !important;
+  background:#f3f4f6;
+  padding:6px;
+}
+
+.original-grid .gallery-item,
+.originals-grid .gallery-item,
+[data-role="original"] .gallery-item{
+  flex:0 1 900px !important;
+  max-width:900px !important;
+}
+
+.original-grid .gallery-item img,
+.originals-grid .gallery-item img,
+[data-role="original"] .gallery-item img{
+  height:460px !important;
+  max-height:none !important;
+}
+
+@media(max-width:620px){
+  .wrap{
+    padding:22px 14px 48px;
+  }
+
+  .gallery-grid .gallery-item{
+    flex-basis:min(100%,330px) !important;
+    max-width:330px !important;
+  }
+
+  .original-grid .gallery-item,
+  .originals-grid .gallery-item,
+  [data-role="original"] .gallery-item{
+    flex-basis:min(100%,900px) !important;
+    max-width:900px !important;
+  }
+
+  .original-grid .gallery-item img,
+  .originals-grid .gallery-item img,
+  [data-role="original"] .gallery-item img{
+    height:340px !important;
+  }
+}
+/* RON CARD SIZING NORMALIZATION END */
+</style>
 </head><body><!-- OBJECTS-DETAIL-NAV-V7 --><main class="wrap">
 
 <nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Bodies</a></nav>
