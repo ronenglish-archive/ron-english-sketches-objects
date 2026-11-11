@@ -719,6 +719,13 @@ html body div.wrap > .primary-artwork {
    max-width:100%!important;
  }
 }
+
+/* Original Drawing: remove image-level inner frames only; preserve the white section panel. */
+section[data-role="original-drawing"] .gallery-grid > a:has(img),
+section[data-role="original-drawing"] .original-grid > a:has(img) {
+  border:0 !important; border-radius:0 !important; padding:0 !important;
+  box-shadow:none !important; overflow:visible !important;
+}
 </style>
 </head><body><main class="wrap">
 <nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">Plants &amp; Botanicals</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
