@@ -39,6 +39,21 @@ footer { text-align: center; margin-top: 30px; padding-top: 16px; border-top: 1p
 .objects-single-page-jump a{display:inline-block;padding:7px 11px;border:1px solid var(--border);border-radius:999px;color:inherit;text-decoration:none;font-size:13px;background:#fff}
 .objects-single-page-jump a:hover{background:#f9fafb}
 @media(max-width:480px){.wrap{width:100%;padding:20px 12px 40px}.objects-single-page-section{margin:28px auto 34px}.objects-single-page-section .index-grid{gap:12px}.objects-single-page-section .index-grid>.index-card{flex:0 1 145px;width:145px;max-width:145px}.objects-single-page-section .index-grid>.index-card>img,.objects-single-page-section .index-grid>.index-card>.index-image{height:140px}.objects-single-page-section .index-grid>.index-card>.card-title,.objects-single-page-section .index-grid>.index-card>.index-title{font-size:13px}}
+
+/* OBJECTS DIRECT-IMAGE CARD FRAME FIX GUARDED V1 */
+/* Same direct-image card structure and frame as approved Body Parts index. */
+.objects-single-page-section .index-grid > .index-card > img {
+  display:block;
+  width:100%;
+  height:158px;
+  object-fit:contain;
+  background:var(--panel);
+  padding:8px;
+  border-bottom:1px solid var(--border);
+}
+@media(max-width:480px) {
+  .objects-single-page-section .index-grid > .index-card > img { height:140px; }
+}
 </style>
 <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
 <script>function objectImageFallback(img){var n=parseInt(img.getAttribute("data-fallback-index")||"0",10)+1;var v=img.getAttribute("data-fallback"+n);if(v){img.setAttribute("data-fallback-index",String(n));img.src=v;}else{img.onerror=null;}}</script></head><body><main class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">← Objects</a> <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
