@@ -83,6 +83,16 @@ section.section-card[style*="max-width"],section.section-block[style*="max-width
 /* Source-specific graphic-design and work-in-progress galleries. */
 [data-role="graphic-designs"] .gallery-grid,.ron-graphic-design-section .gallery-grid,[data-role="work-in-progress"] .gallery-grid{justify-content:center;gap:12px}
 
+
+/* Original Drawing image-link inner frame removal. Outer section and other galleries unchanged. */
+.section-card[data-role="original-drawing"] .gallery-grid a:has(> img),
+.section-card[data-role="original-drawing"] .original-grid a:has(> img),
+.section-card[data-role="original-drawings"] .gallery-grid a:has(> img),
+.section-card[data-role="original"] .gallery-grid a:has(> img),
+.primary-artwork[data-role="original"] > a:has(> img),
+.primary-artwork[data-role="original-drawing"] > a:has(> img) {
+  border:0; border-radius:0; padding:0; box-shadow:none; overflow:visible;
+}
 </style>
 
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">

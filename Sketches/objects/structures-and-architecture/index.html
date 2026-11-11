@@ -39,8 +39,23 @@ footer { margin-top: 35px; padding-top: 18px; border-top: 1px solid #d8d8d8; col
   .index-image { height: 140px; }
   .card-title { font-size: 13px; }
 }
-  </style>
-</head>
+  
+/* OBJECTS SIX SINGLE-PAGE LAYOUT GUARDED V2 */
+.wrap{max-width:1240px;width:100%;padding:28px 18px 60px;margin:0 auto}
+.objects-single-page-section{margin:32px auto 38px}
+.objects-single-page-section>h2{font-size:1.4rem;line-height:1.25;text-align:center;margin:0 auto 20px;font-weight:700}
+.objects-single-page-section .index-grid{margin:0 auto;gap:16px}
+.objects-single-page-section .index-grid>.index-card{flex:0 0 200px;width:200px;max-width:200px}
+.objects-single-page-section .index-grid>.index-card>.index-image{display:flex;align-items:center;justify-content:center;width:100%;height:158px;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
+.objects-single-page-section .index-grid>.index-card>.index-image img{display:block;width:100%;height:100%;max-height:100%;max-width:100%;object-fit:contain}
+.objects-single-page-section .index-grid>.index-card>.index-title{display:block;padding:10px 8px 12px;text-align:center;font-size:13px;font-weight:650;line-height:1.35;overflow-wrap:anywhere}
+.objects-single-page-section .index-grid>.index-card>.card-title{display:block;padding:10px 8px 12px;text-align:center;font-size:13px;font-weight:650;line-height:1.35;overflow-wrap:anywhere}
+.objects-single-page-jump{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 auto 24px}
+.objects-single-page-jump a{display:inline-block;padding:7px 11px;border:1px solid var(--border);border-radius:999px;color:inherit;text-decoration:none;font-size:13px;background:#fff}
+.objects-single-page-jump a:hover{background:#f9fafb}
+@media(max-width:480px){.wrap{width:100%;padding:20px 12px 40px}.objects-single-page-section{margin:28px auto 34px}.objects-single-page-section .index-grid{gap:12px}.objects-single-page-section .index-grid>.index-card{flex:0 1 145px;width:145px;max-width:145px}.objects-single-page-section .index-grid>.index-card>img,.objects-single-page-section .index-grid>.index-card>.index-image{height:140px}.objects-single-page-section .index-grid>.index-card>.card-title,.objects-single-page-section .index-grid>.index-card>.index-title{font-size:13px}}
+</style>
+<script>function objectImageFallback(img){var n=parseInt(img.getAttribute("data-fallback-index")||"0",10)+1;var v=img.getAttribute("data-fallback"+n);if(v){img.setAttribute("data-fallback-index",String(n));img.src=v;}else{img.onerror=null;}}</script></head>
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
@@ -52,33 +67,27 @@ footer { margin-top: 35px; padding-top: 18px; border-top: 1px solid #d8d8d8; col
     <header class="page-header">
       <h1 class="page-title">Structures &amp; Architecture</h1>
     </header>
-    <div class="index-grid">
-      <a class="index-card" href="architectural-outdoor-structures/index.html">
-        <div class="index-image">
-          <img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/outdoor-structures-and-landscape/Stop%20Tombstone.jpg" alt="Architectural &amp; Outdoor Structures" loading="lazy">
-        </div>
-        <div class="card-title">
-          Architectural &amp; Outdoor Structures
-        </div>
-      </a>
-      <a class="index-card" href="buildings/index.html">
-        <div class="index-image">
-          <img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/buildings-and-structures/toilet%20bulding.jpg" alt="Buildings" loading="lazy">
-        </div>
-        <div class="card-title">
-          Buildings
-        </div>
-      </a>
-      <a class="index-card" href="public-fixtures/index.html">
-        <div class="index-image">
-          <img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/urban-objects-and-street-fixtures/newcastle%20fire%20hydrant.jpg" alt="Public Fixtures" loading="lazy">
-        </div>
-        <div class="card-title">
-          Public Fixtures
-        </div>
-      </a>
-    </div>
-    <nav class="sequence-nav" aria-label="Catalogue sequence">
+    <nav class="objects-single-page-jump" aria-label="Object subcategories"><a href="#objects-architectural-outdoor-structures">Architectural &amp; Outdoor Structures</a><a href="#objects-buildings">Buildings</a><a href="#objects-public-fixtures">Public Fixtures</a></nav>
+<section class="objects-single-page-section" id="objects-architectural-outdoor-structures"><h2>Architectural &amp; Outdoor Structures</h2><div class="index-grid">
+<a class="index-card" href="works/re-013552.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/outdoor-structures-and-landscape/cowgirl%20fence.jpg" alt="Cowgirl Fence" loading="lazy"><div class="card-title">Cowgirl Fence</div></a>
+<a class="index-card" href="works/re-013232.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260609%20%285%29.jpg?v=20260610g" alt="Doors" loading="lazy"><div class="card-title">Doors</div></a>
+<a class="index-card" href="works/re-015879.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/outdoor-structures-and-landscape/stop%20tombstone%20drawing.jpg" alt="Stop Tombstone" loading="lazy" data-fallback1="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/outdoor-structures-and-landscape/Stop%20Tombstone.jpg" onerror="objectImageFallback(this)"><div class="card-title">Stop Tombstone</div></a>
+<a class="index-card" href="works/re-014153.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260617%20%2812%29.jpg?v=20260617a" alt="Wall" loading="lazy"><div class="card-title">Wall</div></a>
+</div></section>
+<section class="objects-single-page-section" id="objects-buildings"><h2>Buildings</h2><div class="index-grid">
+<a class="index-card" href="works/re-013797.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260613%20%2854%29.jpg?v=20260613a" alt="Alien Hall Rough Sketch" loading="lazy"><div class="card-title">Alien Hall Rough Sketch</div></a>
+<a class="index-card" href="../household-functional-objects/works/re-012783-v.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/bitcoin-toilet-sketch.jpg?v=20260609b" alt="Bitcoin Toilet Sketch" loading="lazy"><div class="card-title">Bitcoin Toilet Sketch</div></a>
+<a class="index-card" href="works/re-012783-r.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/capitol-cage-sketch.jpg?v=20260609b" alt="Capitol Cage Sketch" loading="lazy"><div class="card-title">Capitol Cage Sketch</div></a>
+<a class="index-card" href="works/re-013859.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/buildings-and-structures/mcdonaldsmodeldrawing.jpg" alt="McDonalds Model" loading="lazy"><div class="card-title">McDonalds Model</div></a>
+<a class="index-card" href="works/re-013957.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/bank.jpg?v=20260614e" alt="Piggy Bank" loading="lazy"><div class="card-title">Piggy Bank</div></a>
+<a class="index-card" href="buildings/works/re-012342-toilet-building-1.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/buildings-and-structures/toilet%20bulding.jpg" alt="Toilet Building 1" loading="lazy"><div class="card-title">Toilet Building 1</div></a>
+<a class="index-card" href="buildings/works/re-012722-toilet-building-2.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/buildings-and-structures/toilet%20building%202.jpg" alt="Toilet Building 2" loading="lazy"><div class="card-title">Toilet Building 2</div></a>
+<a class="index-card" href="buildings/works/re-016898-white-toilet.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260609--94.jpg?v=20260611g" alt="White Toilet" loading="lazy" data-fallback1="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260609%20%2894%29.jpg?v=20260611f" onerror="objectImageFallback(this)"><div class="card-title">White Toilet</div></a>
+</div></section>
+<section class="objects-single-page-section" id="objects-public-fixtures"><h2>Public Fixtures</h2><div class="index-grid">
+<a class="index-card" href="works/re-016004.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/urban-objects-and-street-fixtures/newcastle%20fire%20hydrant.jpg" alt="Newcastle Fire Hydrant" loading="lazy"><div class="card-title">Newcastle Fire Hydrant</div></a>
+</div></section>
+<nav class="sequence-nav" aria-label="Catalogue sequence">
       <a class="nav-pill" href="../patterns-and-symbols/index.html">← Previous: Patterns &amp; Symbols</a>
       <a class="nav-pill" href="../transportation/index.html">Next: Transit &amp; Navigation →</a>
     </nav>
