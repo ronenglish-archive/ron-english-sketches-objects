@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Baseball Glove | Games, Sports &amp; Entertainment | Ron English Catalogue Raisonn&eacute;</title><style id="ron-approved-drawing-detail-v3">
 
 
-/* Owner-approved V3 drawing-detail presentation. November 8 standards. */
+/* Drawing-detail presentation aligned to November 13 consolidated standard; source facts and DOM preserved. */
 *{box-sizing:border-box}
 html,body{margin:0;background:#fff;color:#222}
 body{font:14px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;text-align:center}
@@ -17,7 +17,7 @@ h2,h3,.original-drawing-heading,.section-card h2,.section-block h2{font:400 20px
 .catalogue-meta-block,.meta,.metadata{width:100%;max-width:540px;margin:10px auto 15px;text-align:center}
 .work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.65;text-align:center}
 .work-meta li{display:block;margin:2px auto;text-align:center}
-.relationship-note{max-width:520px;margin:12px auto;padding:12px 14px;background:#f3f3f3;border:1px solid #e5e7eb;border-radius:10px;text-align:center}
+.relationship-note{max-width:560px;margin:12px auto;padding:19px 16px;background:#f3f3f3;border:1px solid #e5e7eb;border-radius:12px;text-align:center}
 .section-card,.section-block,.primary-artwork,.media-section{display:block;width:100%;max-width:560px;margin:12px auto;padding:19px 16px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:none;text-align:center}
 .section-card h2,.section-block h2{margin:0 0 12px}
 .gallery-grid,.image-grid,.original-grid,.kaiju-gallery{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px;margin:0 auto;min-width:0}
@@ -26,16 +26,23 @@ h2,h3,.original-drawing-heading,.section-card h2,.section-block h2{font:400 20px
 .gallery-item img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;object-position:center;background:#fff}
 /* Original Drawing, including bare anchors and multiple full originals. */
 [data-role="original-drawing"] .gallery-grid,[data-role="original-drawings"] .gallery-grid,[data-role="original"] .gallery-grid,.primary-artwork{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px}
-[data-role="original-drawing"] .gallery-item,[data-role="original-drawings"] .gallery-item,[data-role="original"] .gallery-item,[data-role="original-drawing"] .gallery-grid>a,[data-role="original-drawings"] .gallery-grid>a,[data-role="original"] .gallery-grid>a,[data-role="original"] .gallery-item,.primary-artwork>a,.primary-artwork .gallery-item{display:flex;align-items:center;justify-content:center;flex:0 1 auto;width:auto;max-width:410px;height:auto;max-height:none;margin:0;padding:6px;border:1px solid #e5e7eb;border-radius:6px;background:#fff;overflow:hidden}
+[data-role="original-drawing"] .gallery-item,[data-role="original-drawings"] .gallery-item,[data-role="original"] .gallery-item,[data-role="original-drawing"] .gallery-grid>a,[data-role="original-drawings"] .gallery-grid>a,[data-role="original"] .gallery-grid>a,[data-role="original"] .gallery-item,.primary-artwork>a,.primary-artwork .gallery-item{display:flex;align-items:center;justify-content:center;flex:0 1 auto;width:auto;max-width:410px;height:auto;max-height:none;margin:0;padding:0;border:0;border-radius:0;background:#fff;overflow:visible}
 [data-role="original-drawing"] .gallery-grid img,[data-role="original-drawings"] .gallery-grid img,[data-role="original"] .gallery-grid img,.primary-artwork img,[data-role="original"] .gallery-grid img{display:block;width:auto;height:auto;max-width:100%;max-height:380px;object-fit:contain;object-position:center;background:#fff;padding:0}
 /* Digitized Versions: visibly framed 155 x 165px outer tiles, centered 12px gap. */
 [data-role="digital"]:not(:has(h2)) .gallery-grid,[data-role="digital"] .gallery-grid,[data-role="digitized"] .gallery-grid,[data-role="digitized-versions"] .gallery-grid,[data-role="digital"] .image-grid,[data-role="digitized"] .image-grid{gap:12px;justify-content:center}
-[data-role="digital"] .gallery-item,[data-role="digitized"] .gallery-item,[data-role="digitized-versions"] .gallery-item,[data-role="digital"] .gallery-grid>a,[data-role="digitized"] .gallery-grid>a,[data-role="digital"] .image-grid>a,[data-role="digitized"] .image-grid>a{display:flex;align-items:center;justify-content:center;flex:0 0 155px;width:155px;max-width:155px;height:165px;min-height:165px;margin:0;padding:0;border:1px solid #e5e7eb;border-radius:6px;background:#fff;overflow:hidden}
+[data-role="digital"] .gallery-item,[data-role="digitized"] .gallery-item,[data-role="digitized-versions"] .gallery-item,[data-role="digital"] .gallery-grid>a,[data-role="digitized"] .gallery-grid>a,[data-role="digital"] .image-grid>a,[data-role="digitized"] .image-grid>a{display:flex;align-items:center;justify-content:center;flex:0 0 200px;width:200px;max-width:200px;height:200px;min-height:200px;margin:0;padding:0;border:1px solid #e5e7eb;border-radius:10px;background:#fff;overflow:hidden}
 [data-role="digital"] .gallery-grid img,[data-role="digitized"] .gallery-grid img,[data-role="digitized-versions"] .gallery-grid img,[data-role="digital"] .image-grid img,[data-role="digitized"] .image-grid img{width:100%;height:100%;max-width:100%;max-height:100%;padding:0;object-fit:contain;object-position:center;background:#fff}
 /* Six compact documentary/card families; do not conflate catalogue category. */
 [data-role="cards"] .gallery-grid,[data-role="card"] .gallery-grid,[data-role="delusionville-trading-cards"] .gallery-grid,[data-role="delusionville-cards"] .gallery-grid,[data-role="wip"] .gallery-grid,[data-role="work-in-progress"] .gallery-grid,[data-role="photo-gallery"] .gallery-grid,[data-role="graphic-designs"] .gallery-grid,[data-role="area54-cards"] .gallery-grid,.ron-unified-notes-wip-panel:not([data-role]) .gallery-grid,[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px}
-[data-role="cards"] .gallery-item,[data-role="card"] .gallery-item,[data-role="delusionville-trading-cards"] .gallery-item,[data-role="delusionville-cards"] .gallery-item,[data-role="wip"] .gallery-item,[data-role="work-in-progress"] .gallery-item,[data-role="photo-gallery"] .gallery-item,[data-role="graphic-designs"] .gallery-item,[data-role="area54-cards"] .gallery-item,.ron-unified-notes-wip-panel:not([data-role]) .gallery-item,[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .gallery-item{display:flex;justify-content:center;align-items:center;flex:0 0 130px;width:130px;max-width:130px;height:170px;min-height:170px;margin:0;padding:0;border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;background:#fff;text-decoration:none}
-[data-role="cards"] .gallery-item img,[data-role="card"] .gallery-item img,[data-role="delusionville-trading-cards"] .gallery-item img,[data-role="delusionville-cards"] .gallery-item img,[data-role="wip"] .gallery-item img,[data-role="work-in-progress"] .gallery-item img,[data-role="photo-gallery"] .gallery-item img,[data-role="graphic-designs"] .gallery-item img,[data-role="area54-cards"] .gallery-item img,.ron-unified-notes-wip-panel:not([data-role]) .gallery-item img,[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .gallery-item img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;background:#fff}
+[data-role="cards"] .gallery-item,[data-role="card"] .gallery-item,[data-role="delusionville-trading-cards"] .gallery-item,[data-role="delusionville-cards"] .gallery-item,[data-role="wip"] .gallery-item,[data-role="work-in-progress"] .gallery-item,[data-role="area54-cards"] .gallery-item,.ron-unified-notes-wip-panel:not([data-role]) .gallery-item,[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .gallery-item{display:flex;justify-content:center;align-items:center;flex:0 0 130px;width:130px;max-width:130px;height:170px;min-height:170px;margin:0;padding:0;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;background:#fff;text-decoration:none}
+[data-role="cards"] .gallery-item img,[data-role="card"] .gallery-item img,[data-role="delusionville-trading-cards"] .gallery-item img,[data-role="delusionville-cards"] .gallery-item img,[data-role="wip"] .gallery-item img,[data-role="work-in-progress"] .gallery-item img,[data-role="area54-cards"] .gallery-item img,.ron-unified-notes-wip-panel:not([data-role]) .gallery-item img,[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .gallery-item img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;background:#fff}
+
+[data-role="photo-gallery"] .gallery-item{display:flex;align-items:center;justify-content:center;flex:0 0 200px;width:200px;max-width:200px;height:200px;min-height:200px;margin:0;padding:0;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;background:#fff;text-decoration:none}
+[data-role="photo-gallery"] .gallery-item img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+[data-role="photo-gallery"] figcaption{display:none}
+
+[data-role="graphic-designs"] .gallery-item{display:flex;align-items:center;justify-content:center;flex:0 1 auto;width:auto;max-width:200px;height:auto;max-height:200px;margin:0;padding:0;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;background:#fff}
+[data-role="graphic-designs"] .gallery-item img{display:block;width:auto;height:auto;max-width:200px;max-height:200px;object-fit:contain}
 /* Documentary figure: caption remains separate beneath its framed image. */
 [data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px;margin:0 auto}
 [data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item{flex:0 0 130px;width:130px;max-width:130px;min-width:0;margin:0;text-align:center}
@@ -46,15 +53,15 @@ h2,h3,.original-drawing-heading,.section-card h2,.section-block h2{font:400 20px
 [data-role="literature"] .literature-entry{max-width:520px;margin:0 auto 16px;text-align:center;line-height:1.65}
 [data-role="literature"] .literature-entry>p,[data-role="literature"] .literature-citation{max-width:520px;margin:8px auto;text-align:center}
 [data-role="literature"] .gallery-grid,[data-role="literature"] .image-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:0 auto}
-[data-role="literature"] .gallery-item,[data-role="literature"] .gallery-grid>a,[data-role="literature"] .image-grid>a{display:flex;align-items:center;justify-content:center;flex:0 1 155px;width:155px;max-width:155px;height:auto;min-height:0;margin:0;padding:6px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;overflow:hidden}
-[data-role="literature"] .gallery-grid img,[data-role="literature"] .image-grid img{display:block;width:100%;height:auto;max-width:100%;max-height:155px;object-fit:contain;background:#fff}
+[data-role="literature"] .gallery-item,[data-role="literature"] .gallery-grid>a,[data-role="literature"] .image-grid>a{display:flex;align-items:center;justify-content:center;flex:0 1 200px;width:200px;max-width:200px;height:auto;min-height:0;margin:0;padding:0;border:1px solid #e5e7eb;border-radius:12px;background:#fff;overflow:hidden}
+[data-role="literature"] .gallery-grid img,[data-role="literature"] .image-grid img{display:block;width:100%;height:auto;max-width:100%;max-height:200px;object-fit:contain;background:#fff}
 .ron-unified-notes-wip-panel[style*="max-width:960px"]{max-width:560px!important}
 /* Preserve native video and verified compact YouTube cards. */
 [data-role="videos"] .video-gallery{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
 [data-role="videos"] .video-tile{flex:0 1 200px;width:200px;max-width:200px;margin:0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden}
-[data-role="videos"] .video-poster{height:125px;position:relative;display:flex;align-items:center;justify-content:center}
+[data-role="videos"] .video-poster{height:auto;max-height:200px;position:relative;display:flex;align-items:center;justify-content:center}
 [data-role="videos"] .video-poster img{width:100%;height:100%;object-fit:contain}
-[data-role="videos"] .video-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%}
+[data-role="videos"] .video-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:26px;height:26px;border-radius:50%}
 [data-role="videos"] iframe,[data-role="videos"] video{max-width:100%;height:auto}
 /* Center notes, retaining every link and paragraph. */
 [data-role="notes"],[data-role="notes"] p,[data-role="notes"] .text-block,.notes-text,.text-block,.text-block p{text-align:center}
@@ -62,14 +69,12 @@ h2,h3,.original-drawing-heading,.section-card h2,.section-block h2{font:400 20px
 .text-block p{margin:8px auto}
 footer{font-size:12px;color:#6b7280;text-align:center;margin:15px auto 5px;padding:12px 0 0;border-top:1px solid #e5e7eb}
 @media(max-width:600px){.wrap{padding:12px 10px 20px}.section-card,.section-block,.primary-artwork{padding:15px 11px}}
-@media(max-width:390px){[data-role="digital"] .gallery-item,[data-role="digitized"] .gallery-item,[data-role="digitized-versions"] .gallery-item,[data-role="digital"] .gallery-grid>a,[data-role="digitized"] .gallery-grid>a,[data-role="digital"] .image-grid>a,[data-role="digitized"] .image-grid>a{flex-basis:130px;width:130px;max-width:130px;height:165px}}
+@media(max-width:390px){[data-role="digital"] .gallery-item,[data-role="digitized"] .gallery-item,[data-role="digitized-versions"] .gallery-item,[data-role="digital"] .gallery-grid>a,[data-role="digitized"] .gallery-grid>a,[data-role="digital"] .image-grid>a,[data-role="digitized"] .image-grid>a{flex-basis:200px;width:200px;max-width:200px;height:200px}}
 
 
 /* Objects-specific actual markup: 'digital' may instead be labeled Artist-Created Graphic Designs. */
-section[data-role="digital"]:has(> h2):has(h2:first-child):has(h2) {}
 section[data-role="digital"]:has(h2) .gallery-grid > .gallery-item {margin:0}
 section[data-role="digital"]:has(.gallery-item > a) .gallery-grid{gap:12px;justify-content:center}
-section[data-role="digital"] .gallery-item:has(>a){flex:0 0 130px;width:130px;max-width:130px;height:170px;min-height:170px;margin:0}
 section[data-role="digital"] .gallery-item:has(>a) >a{display:flex;align-items:center;justify-content:center;width:100%;height:100%;min-width:0;margin:0;padding:0}
 section[data-role="digital"] .gallery-item:has(>a) img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
 /* Inline inherited old source section widths cannot exceed the approved 560px panels. */
@@ -90,6 +95,14 @@ section.section-card[style*="max-width"],section.section-block[style*="max-width
 .primary-artwork[data-role="original-drawing"] > a:has(> img) {
   border:0; border-radius:0; padding:0; box-shadow:none; overflow:visible;
 }
+
+/* Inner linked images fill the 200 x 200 digitized tile without cropping. */
+[data-role="digital"] .gallery-item>a,[data-role="digitized"] .gallery-item>a,[data-role="digitized-versions"] .gallery-item>a{display:flex;width:100%;height:100%;align-items:center;justify-content:center;min-width:0;min-height:0}
+[data-role="digital"] .gallery-item>a>img,[data-role="digitized"] .gallery-item>a>img,[data-role="digitized-versions"] .gallery-item>a>img{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+/* Baseball Glove work-in-progress image: 200 x 200 tile. */
+[data-role="work-in-progress"] .gallery-item{flex:0 0 200px;width:200px;max-width:200px;height:200px;min-height:200px}
+[data-role="work-in-progress"] .gallery-item>a{display:flex;width:100%;height:100%;align-items:center;justify-content:center}
+[data-role="work-in-progress"] .gallery-item>a>img{width:100%;height:100%;object-fit:contain}
 </style>
 
 
