@@ -17,7 +17,7 @@ body { margin: 0; background: #fff; color: #171717; font-family: Arial, Helvetic
 .nav-pill { display: inline-flex; align-items: center; justify-content: center; padding: 8px 14px; border: 1px solid var(--border); border-radius: 999px; background: #fff; color: #111; text-decoration: none; font: 14px/1.25 system-ui, -apple-system, "Segoe UI", sans-serif; }
 .nav-pill:hover, .nav-pill:focus-visible { background: #f3f4f6; }
 .page-header { margin: 0 0 26px; text-align: center; }
-.page-title { margin: 0; font: 500 clamp(30px, 4vw, 46px) Georgia, "Times New Roman", serif; }
+.page-title { margin: 0;;font:500 clamp(30px, 4vw, 46px) Georgia, "Times New Roman", serif;}
 
 /* Artwork and category cards */
 .index-grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 16px; margin: 0 auto; }
@@ -25,8 +25,8 @@ body { margin: 0; background: #fff; color: #171717; font-family: Arial, Helvetic
 .index-card:hover { border-color: #c9ced5; box-shadow: 0 5px 16px rgba(0,0,0,.08); }
 .index-image { display: flex; align-items: center; justify-content: center; width: 100%; height: 158px; padding: 8px; border-bottom: 1px solid var(--border); background: var(--panel); }
 .index-image img { display: block; width: 100%; height: 100%; max-width: 100%; max-height: 100%; object-fit: contain; }
-.card-title { padding: 10px 8px 12px; margin: 0; text-align: center; font: 500 14px/1.35 Georgia, "Times New Roman", serif; overflow-wrap: anywhere; }
-.set-label { display: block; margin-top: 4px; color: var(--muted); font: 400 12px/1.35 Arial, Helvetica, sans-serif; }
+.card-title { padding: 10px 8px 12px; margin: 0; text-align: center;  overflow-wrap: anywhere;;;font:500 14px/1.35 Georgia, "Times New Roman", serif;}
+.set-label { display: block; margin-top: 4px; color: var(--muted);;font-family:Georgia, "Times New Roman", serif;}
 
 /* Sequence and publication */
 .sequence-nav { margin: 28px auto 20px; }
@@ -37,7 +37,7 @@ footer { margin-top: 35px; padding-top: 18px; border-top: 1px solid #d8d8d8; col
   .index-grid { gap: 12px; }
   .index-card { flex: 0 1 145px; max-width: 145px; }
   .index-image { height: 140px; }
-  .card-title { font-size: 13px; }
+  .card-title {;;font:500 14px/1.35 Georgia, "Times New Roman", serif;}
 }
   
 /* OBJECTS SIX SINGLE-PAGE LAYOUT GUARDED V2 */
@@ -48,12 +48,12 @@ footer { margin-top: 35px; padding-top: 18px; border-top: 1px solid #d8d8d8; col
 .objects-single-page-section .index-grid>.index-card{flex:0 0 200px;width:200px;max-width:200px}
 .objects-single-page-section .index-grid>.index-card>.index-image{display:flex;align-items:center;justify-content:center;width:100%;height:158px;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
 .objects-single-page-section .index-grid>.index-card>.index-image img{display:block;width:100%;height:100%;max-height:100%;max-width:100%;object-fit:contain}
-.objects-single-page-section .index-grid>.index-card>.index-title{display:block;padding:10px 8px 12px;text-align:center;font-size:13px;font-weight:650;line-height:1.35;overflow-wrap:anywhere}
-.objects-single-page-section .index-grid>.index-card>.card-title{display:block;padding:10px 8px 12px;text-align:center;font-size:13px;font-weight:650;line-height:1.35;overflow-wrap:anywhere}
+.objects-single-page-section .index-grid>.index-card>.index-title{display:block;padding:10px 8px 12px;text-align:center;line-height:1.35;overflow-wrap:anywhere;font:500 14px/1.35 Georgia, "Times New Roman", serif;}
+.objects-single-page-section .index-grid>.index-card>.card-title{display:block;padding:10px 8px 12px;text-align:center;line-height:1.35;overflow-wrap:anywhere;font:500 14px/1.35 Georgia, "Times New Roman", serif;}
 .objects-single-page-jump{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 auto 24px}
 .objects-single-page-jump a{display:inline-block;padding:7px 11px;border:1px solid var(--border);border-radius:999px;color:inherit;text-decoration:none;font-size:13px;background:#fff}
 .objects-single-page-jump a:hover{background:#f9fafb}
-@media(max-width:480px){.wrap{width:100%;padding:20px 12px 40px}.objects-single-page-section{margin:28px auto 34px}.objects-single-page-section .index-grid{gap:12px}.objects-single-page-section .index-grid>.index-card{flex:0 1 145px;width:145px;max-width:145px}.objects-single-page-section .index-grid>.index-card>img,.objects-single-page-section .index-grid>.index-card>.index-image{height:140px}.objects-single-page-section .index-grid>.index-card>.card-title,.objects-single-page-section .index-grid>.index-card>.index-title{font-size:13px}}
+@media(max-width:480px){.wrap{width:100%;padding:20px 12px 40px}.objects-single-page-section{margin:28px auto 34px}.objects-single-page-section .index-grid{gap:12px}.objects-single-page-section .index-grid>.index-card{flex:0 1 145px;width:145px;max-width:145px}.objects-single-page-section .index-grid>.index-card>img,.objects-single-page-section .index-grid>.index-card>.index-image{height:140px}.objects-single-page-section .index-grid>.index-card>.card-title,.objects-single-page-section .index-grid>.index-card>.index-title{;font:500 14px/1.35 Georgia, "Times New Roman", serif;}}
 
 /* OBJECTS DIRECT-IMAGE CARD FRAME FIX GUARDED V1 */
 /* Same direct-image card structure and frame as approved Body Parts index. */
