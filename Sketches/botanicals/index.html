@@ -1,132 +1,132 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Plants &amp; Botanicals | Ron English Catalogue Raisonn&eacute;</title>
 
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:1120px;margin:0 auto;padding:28px 18px 56px}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0;text-align:center}
-.nav-pill{display:inline-block;padding:8px 14px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px}
-.nav-pill:hover{background:#f9fafb}
-.page-header{text-align:center;margin:0 auto 24px}
-.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.05}
-.index-grid{margin-top:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;justify-items:center}
-.gallery-item{display:block;max-width:320px;width:100%;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;background:#fff;text-decoration:none;color:inherit;box-shadow:0 4px 18px rgba(0,0,0,.04)}
-.gallery-item img{display:block;width:100%;height:240px;object-fit:contain;background:#f3f4f6;padding:10px;border-bottom:1px solid #e5e7eb}
-.entry-body{padding:15px 14px 17px;text-align:center;width:100%}
-.work-title{margin:0;font-weight:700;font-size:1.05rem;line-height:1.3;text-align:center}
-footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}
-@media(max-width:700px){.wrap{padding:22px 14px 48px}.index-grid{grid-template-columns:1fr}}
-</style><style id="sketches-index-grid-last-row-centering-v1">
-  .index-grid{display:flex !important;flex-wrap:wrap !important;justify-content:center !important;align-items:stretch !important;}
-  .index-grid > *{flex:0 1 calc((100% - 54px) / 4) !important;max-width:calc((100% - 54px) / 4) !important;}
-  @media(max-width:732px){.index-grid > *{flex-basis:calc((100% - 36px) / 3) !important;max-width:calc((100% - 36px) / 3) !important;}}
-  @media(max-width:494px){.index-grid > *{flex-basis:calc((100% - 18px) / 2) !important;max-width:calc((100% - 18px) / 2) !important;}}
-  @media(max-width:256px){.index-grid > *{flex-basis:100% !important;max-width:100% !important;}}
+  /* Page foundation */
+  :root {
+    --border: #e5e7eb;
+    --muted: #6b7280;
+    --panel: #f8fafc;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #fff;
+    color: #111;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap {
+    width: calc(100% - 36px);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 26px 0 48px;
+  }
+
+  /* Navigation */
+  .nav-pills, .sequence-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .nav-pill {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .nav-pill:hover { background: #f9fafb; }
+
+  /* Heading */
+  .page-header { text-align: center; margin: 0 auto 24px; }
+  .page-title { margin: 0;font:700 36px/1.2 Georgia,"Times New Roman",serif;text-align:center;}
+
+  /* Artwork grid and cards */
+  .index-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 16px;
+    margin: 0 auto;
+  }
+  .index-grid > .gallery-item {
+    display: flex;
+    flex: 0 0 200px;
+    width: 200px;
+    max-width: 200px;
+    min-width: 0;
+    flex-direction: column;
+    overflow: hidden;
+    background: #fff;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+  .index-grid > .gallery-item > img {
+    display: block;
+    width: 100%;
+    height: 158px;
+    max-width: 100%;
+    object-fit: contain;
+    padding: 8px;
+    background: var(--panel);
+  }
+  .entry-body { text-align: center; padding: 10px 8px 12px; }
+  .work-title { font-size: 14px; font-weight: 600; margin: 0; overflow-wrap: anywhere; }
+  .set-label {
+    display: block;
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  /* Footer */
+  footer {
+    margin: 30px auto 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* Narrow screens */
+  @media (max-width: 480px) {
+    .wrap { width: calc(100% - 24px); }
+    .index-grid { gap: 12px; }
+    .index-grid > .gallery-item {
+      flex: 0 1 145px;
+      width: 145px;
+      max-width: 145px;
+    }
+    .index-grid > .gallery-item > img { height: 140px; }
+  }
 </style>
 
-<style id="sketches-index-centered-final-row-v2">
-  .index-grid{display:flex !important;flex-wrap:wrap !important;justify-content:center !important;align-items:stretch;}
-  .index-grid > .index-card,.index-grid > .group-card,.index-grid > .gallery-item{flex:0 1 300px !important;max-width:320px;width:100%;}
-</style>
 
-<style id="global-main-index-standard-size-v1">
-  .index-grid{
-    display:flex!important;
-    flex-wrap:wrap!important;
-    justify-content:center!important;
-    align-items:stretch!important;
-    gap:18px!important;
-  }
-  .index-grid > .index-card,
-  .index-grid > .gallery-item,
-  .index-grid > .group-card{
-    flex:0 1 300px!important;
-    width:100%!important;
-    max-width:320px!important;
-    min-width:0!important;
-  }
-  .index-grid > .index-card .index-image,
-  .index-grid > .index-card > img,
-  .index-grid > .gallery-item img,
-  .index-grid > .group-card img{
-    width:100%!important;
-    height:240px!important;
-    max-height:240px!important;
-    aspect-ratio:auto!important;
-    object-fit:contain!important;
-  }
-</style>
-<style id="botanicals-horizontal-centering-v2">body,.page-header,.page-title,.catalogue-meta-block,.metadata,.work-meta,.work-meta li,.relationship-note,.notes-text,.text-block,.text-block p,.literature-entry,.lit-entry,.section-intro,.section-card h2,.section-card h3,.entry-body,.work-title,.card-title,.label,figcaption,footer{text-align:center!important}.catalogue-meta-block,.metadata,.work-meta,.relationship-note,.notes-text,.text-block,.literature-entry,.lit-entry,.section-intro{margin-left:auto!important;margin-right:auto!important}</style><style id="botanicals-set-label-v1">.set-label{display:block;margin-top:4px;font-size:13px;font-weight:400;color:#6b7280}</style><style id="ron-catalogue-four-across-standard-v1">
-.index-grid,
-.gallery-grid,
-.category-grid,
-.subcategories-grid,
-.cards-grid{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:stretch!important;
-  gap:18px!important;
-}
-.index-grid > .index-card,
-.index-grid > .gallery-item,
-.index-grid > .group-card,
-.gallery-grid > .index-card,
-.gallery-grid > .gallery-item,
-.gallery-grid > .group-card,
-.category-grid > .index-card,
-.category-grid > .gallery-item,
-.category-grid > .group-card,
-.subcategories-grid > .index-card,
-.subcategories-grid > .gallery-item,
-.subcategories-grid > .group-card,
-.cards-grid > .index-card,
-.cards-grid > .gallery-item,
-.cards-grid > .group-card{
-  box-sizing:border-box!important;
-  min-width:0!important;
-  flex:0 1 calc((100% - 54px) / 4)!important;
-  width:calc((100% - 54px) / 4)!important;
-  max-width:calc((100% - 54px) / 4)!important;
-}
-@media(max-width:900px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:calc((100% - 36px) / 3)!important;
-    width:calc((100% - 36px) / 3)!important;
-    max-width:calc((100% - 36px) / 3)!important;
-  }
-}
-@media(max-width:680px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:calc((100% - 18px) / 2)!important;
-    width:calc((100% - 18px) / 2)!important;
-    max-width:calc((100% - 18px) / 2)!important;
-  }
-}
-@media(max-width:440px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:100%!important;
-    width:100%!important;
-    max-width:100%!important;
-  }
-}
-</style>
-<style id="ron-category-sequence-standard-v1">nav.sequence-nav.ron-bottom-prev-next-center{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;gap:12px!important;margin:28px auto 18px!important;text-align:center!important}nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill{display:inline-block!important;flex:0 1 auto!important;padding:8px 14px!important;border:1px solid #e5e7eb!important;border-radius:999px!important;background:#fff!important;color:#111!important;text-decoration:none!important;font:400 14px/1.4 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important}nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill:hover,nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill:focus{background:#f9fafb!important}</style><link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-</head><body><main class="wrap">
+
+
+
+<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+</head>
+<body><main class="wrap">
 <nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
 <header class="page-header"><h1 class="page-title">Plants &amp; Botanicals</h1></header>
@@ -138,9 +138,10 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #
 <a class="gallery-item" data-title="Bicycle Flower" href="bicycle-flower/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Bicycle%20Flower%202%20ORIGINAL.jpg" alt="Bicycle Flower" loading="lazy"><div class="entry-body"><p class="work-title">Bicycle Flower</p></div></a>
 <a class="gallery-item" data-title="Bicycle Flower 2" href="bicycle-flower-2/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Bicycle%20Flower%201%20ORIGINAL.jpg" alt="Bicycle Flower 2" loading="lazy"><div class="entry-body"><p class="work-title">Bicycle Flower 2</p></div></a>
 <a class="gallery-item" data-title="Big-Nose Flower" href="big-nose-flower/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Big%20Nose%20FLower%20ORIGINAL.jpg" alt="Big-Nose Flower" loading="lazy"><div class="entry-body"><p class="work-title">Big-Nose Flower</p></div></a>
-<a class="gallery-item" data-title="Brain Tree 1" href="braintree/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/brains/braintree%202%20ORIGINAL.jpg" alt="Brain Tree 1" loading="lazy"><div class="entry-body"><p class="work-title">Brain Tree 1</p></div></a>
-<a class="gallery-item" data-title="Brain Tree 2" href="brain-tree/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/brains/Brain%20Tree%20COLOR.jpg" alt="Brain Tree 2" loading="lazy"><div class="entry-body"><p class="work-title">Brain Tree 2</p></div></a>
-<a class="gallery-item" data-title="Brain Tree 3" href="brain-tree-3/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Brain%20Tree%20COLOR.jpg" alt="Brain Tree 3" loading="lazy"><div class="entry-body"><p class="work-title">Brain Tree 3</p></div></a>
+    <a class="gallery-item" data-title="Brain Tree" href="sets/brain-tree.html">
+      <img src="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/brains/Brain%20Tree%20COLOR.jpg" alt="Brain Tree" loading="lazy">
+      <div class="entry-body"><p class="work-title">Brain Tree<span class="set-label">Set</span></p></div>
+    </a>
 <a class="gallery-item" data-title="Brick Tree" href="sets/brick-tree.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/outdoor-structures-and-landscape/brick%20tree%202.jpg" alt="Brick Tree" loading="lazy"><div class="entry-body"><p class="work-title">Brick Tree<span class="set-label">Set</span></p></div></a>
 <a class="gallery-item" data-title="Cat Flower" href="cat-flower/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Cat%20Flower%20collage%20mixed%20media%20ORIGINAL.jpg" alt="Cat Flower" loading="lazy"><div class="entry-body"><p class="work-title">Cat Flower</p></div></a>
 <a class="gallery-item" data-title="Chirpetal" href="chirpetal/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Chirpetal%2014x17%20ORIGINAL.jpg" alt="Chirpetal" loading="lazy"><div class="entry-body"><p class="work-title">Chirpetal</p></div></a>
@@ -157,7 +158,6 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #
 <a class="gallery-item" data-title="Feather Flower Pattern" href="sets/feather-flower-pattern.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers/Feather%20Flower%20ORIGINAL.jpg" alt="Feather Flower Pattern" loading="lazy"><div class="entry-body"><p class="work-title">Feather Flower Pattern<span class="set-label">Set</span></p></div></a>
 <a class="gallery-item" data-title="Ferris Wheel Flowers Sketches" href="sets/ferris-wheel-flowers-sketches.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Ferris%20Wheel%20Flowers%20ORIGINAL.jpg" alt="Ferris Wheel Flowers Sketches" loading="lazy"><div class="entry-body"><p class="work-title">Ferris Wheel Flowers Sketches<span class="set-label">Set</span></p></div></a>
 <a class="gallery-item" data-title="Flame Flower" href="flame-flower/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Fire%20Flower%2014x17%20ORIGINAL.jpg" alt="Flame Flower" loading="lazy"><div class="entry-body"><p class="work-title">Flame Flower</p></div></a>
-<a class="gallery-item" data-title="Flaming Rose" href="flaming-rose/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers/Flaming%20Rose%20ORIGINAL.jpg" alt="Flaming Rose" loading="lazy"><div class="entry-body"><p class="work-title">Flaming Rose</p></div></a>
 <a class="gallery-item" data-title="Floating Flowers" href="floating-flowers/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Eye%20Flowers%20%28same%20paper%20as%20x%29%2014x17%20paper%20but%20drawing%20is%20not%20this%20size%20pencil%20ink%20ORIGINAL.jpg" alt="Floating Flowers" loading="lazy"><div class="entry-body"><p class="work-title">Floating Flowers</p></div></a>
 <a class="gallery-item" data-title="Flower Baby" href="sets/flower-baby.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers/Flower%20Baby%20COLOR.jpg" alt="Flower Baby" loading="lazy"><div class="entry-body"><p class="work-title">Flower Baby<span class="set-label">Set</span></p></div></a>
 <a class="gallery-item" data-title="Flower Buddy" href="flower-body/index.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260618%20%2834%29j.jpg?v=20260618a" alt="Flower Buddy" loading="lazy"><div class="entry-body"><p class="work-title">Flower Buddy</p></div></a>
@@ -169,7 +169,7 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #
 <a class="gallery-item" data-title="Flower Girl on Tree Stump" href="flower-girl-on-tree-stump/index.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260624%20(41).jpg" alt="Flower Girl on Tree Stump" loading="lazy"><div class="entry-body"><p class="work-title">Flower Girl on Tree Stump</p></div></a>
 <a class="gallery-item" data-title="Flower Lion" href="flower-lion/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers/Flower%20Lion%20COLOR.jpg" alt="Flower Lion" loading="lazy"><div class="entry-body"><p class="work-title">Flower Lion</p></div></a>
 <a class="gallery-item" data-title="Flower Pals" href="flower-pals/index.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260323.jpg?v=20260614e" alt="Flower Pals" loading="lazy"><div class="entry-body"><p class="work-title">Flower Pals</p></div></a>
-<a class="gallery-item" data-title="Flower Sketches" href="flowers-re-013907/index.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260614%20(102).jpg?v=20260614e" alt="Flower Sketches" loading="lazy"><div class="entry-body"><p class="work-title">Flower Sketches</p></div></a>
+<a class="gallery-item" data-title="Flower Sketches" href="sets/flower-sketches.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260614%20(102).jpg?v=20260614e" alt="Flower Sketches" loading="lazy"><div class="entry-body"><p class="work-title">Flower Sketches<span class="set-label">Set</span></p></div></a>
 <a class="gallery-item" data-title="Happy Sunflower" href="happy-sunflower/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers/Happy%20Sunflower%20COLOR.jpg" alt="Happy Sunflower" loading="lazy"><div class="entry-body"><p class="work-title">Happy Sunflower</p></div></a>
 <a class="gallery-item" data-title="Heart Flower Front and Back" href="heart-flower/index.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260611%20%287%29.jpg?v=20260611i" alt="Heart Flower Front and Back" loading="lazy"><div class="entry-body"><p class="work-title">Heart Flower Front and Back</p></div></a>
 <a class="gallery-item" data-title="Leaves Sketches" href="sets/leaves-sketches.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers/leaves%201%20ORIGINAL.jpg" alt="Leaves Sketches" loading="lazy"><div class="entry-body"><p class="work-title">Leaves Sketches<span class="set-label">Set</span></p></div></a>
@@ -193,8 +193,8 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #
 <a class="gallery-item" data-title="Surprised Flower" href="surprised-flower/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Concerned%20Flower%20ORIGINAL.jpg" alt="Surprised Flower" loading="lazy"><div class="entry-body"><p class="work-title">Surprised Flower</p></div></a>
 <a class="gallery-item" data-title="Terreria" href="terreria/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/terreria%20ORIGINAL.jpg" alt="Terreria" loading="lazy"><div class="entry-body"><p class="work-title">Terreria</p></div></a>
 <a class="gallery-item" data-title="The Third Eye" href="the-third-eye/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/The%20Third%20Eye%2014x17%20in%20ORIGINAL.jpg" alt="The Third Eye" loading="lazy"><div class="entry-body"><p class="work-title">The Third Eye</p></div></a>
-<a class="gallery-item" data-title="Tiger Flower" href="tiger-flower/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Cat%20Flower%20mixed%20media%20with%20AI%20generated%20image%20ORIGINAL.jpg" alt="Tiger Flower" loading="lazy"><div class="entry-body"><p class="work-title">Tiger Flower</p></div></a>
-<a class="gallery-item" data-title="Tiger Flower" href="tiger-flower-re-012609/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Potted%20Tiger%2014x17%20ORIGINAL.jpg" alt="Tiger Flower" loading="lazy"><div class="entry-body"><p class="work-title">Tiger Flower</p></div></a>
+<a class="gallery-item" data-title="Tiger Flower 1" href="tiger-flower/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Cat%20Flower%20mixed%20media%20with%20AI%20generated%20image%20ORIGINAL.jpg" alt="Tiger Flower" loading="lazy"><div class="entry-body"><p class="work-title">Tiger Flower 1</p></div></a>
+<a class="gallery-item" data-title="Tiger Flower 2" href="tiger-flower-re-012609/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Potted%20Tiger%2014x17%20ORIGINAL.jpg" alt="Tiger Flower" loading="lazy"><div class="entry-body"><p class="work-title">Tiger Flower 2</p></div></a>
 <a class="gallery-item" data-title="Tongue Flower" href="tongue-flower/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/Tongue%20Flower%20ORIGINAL.jpg" alt="Tongue Flower" loading="lazy"><div class="entry-body"><p class="work-title">Tongue Flower</p></div></a>
 <a class="gallery-item" data-title="Totem-Tree-Sketch" href="totem-tree-sketch/index.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/totem-tree-sketch.jpg?v=20260609b" alt="Totem-Tree-Sketch" loading="lazy"><div class="entry-body"><p class="work-title">Totem-Tree-Sketch</p></div></a>
 <a class="gallery-item" data-title="Tree of Life" href="tree-of-life/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/Kaijus/Tree%20of%20Life%20%20COLOR.jpg" alt="Tree of Life" loading="lazy"><div class="entry-body"><p class="work-title">Tree of Life</p></div></a>
@@ -206,4 +206,5 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #
 <a class="gallery-item" data-title="Whirlpool Tree" href="whirlpool-tree/index.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260609%20%2856%29.jpg?v=20260611f" alt="Whirlpool Tree" loading="lazy"><div class="entry-body"><p class="work-title">Whirlpool Tree</p></div></a>
 <a class="gallery-item" data-title="Zebra Flower" href="sets/zebra-flower.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/flowers%26botanicals/zebra%20flower%20ORIGINAL.jpg" alt="Zebra Flower" loading="lazy"><div class="entry-body"><p class="work-title">Zebra Flower<span class="set-label">Set</span></p></div></a></section>
 <nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-people-characters/Sketches/people-characters/people/index.html">&larr; Previous: People</a><a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/Sketches/pop-culture-public-figures/index.html">Next: Pop Culture &amp; Public Figures &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer>
-</main></body></html>
+</main></body>
+</html>
